@@ -10,10 +10,10 @@ app.use(cors({
 }));
 
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'floorplandb'
+  host: 'gator4214.hostgator.com',
+  user: 'artixpac_magnetto',
+  password: 'Limecake23!',
+  database: 'artixpac_insigniaresources'
 });
 
 // host: 'gator4214.hostgator.com',
@@ -65,7 +65,7 @@ app.get('/getAllData', async (req, res) => {
   }
 });
 
-const port = 5000;
+const port = 2083;
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
