@@ -10,10 +10,10 @@ app.use(cors({
 }));
 
 const connection = mysql.createConnection({
-  host: 'gator4214.hostgator.com',
-  user: 'artixpac_magnetto',
-  password: 'Limecake23!',
-  database: 'artixpac_insigniaresources'
+  host: 'b6qbdwley7soevanfbv3-mysql.services.clever-cloud.com',
+  user: 'um2laytkoqwm05o0',
+  password: 'g96VtN3BCCEprgyIn4P8',
+  database: 'b6qbdwley7soevanfbv3'
 });
 
 // host: 'gator4214.hostgator.com',
@@ -65,7 +65,7 @@ app.get('/getAllData', async (req, res) => {
   }
 });
 
-const port = 2083;
+const port = 3306;
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
