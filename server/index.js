@@ -48,6 +48,7 @@ app.get('/getAllData', async (req, res) => {
     const monitorsQuery = 'SELECT * FROM monitors';
     const departmentsQuery = 'SELECT * FROM departments';
     const officesQuery = 'SELECT * FROM offices';
+    const officesCoordinatesQuery = 'SELECT * FROM offices_coordinates';
 
     const allData = {};
 
@@ -65,6 +66,9 @@ app.get('/getAllData', async (req, res) => {
 
     allData.offices = await executeQuery(officesQuery);
     console.log('Offices Data from MySQL:', allData.offices);
+
+    allData.offices_coordinates = await executeQuery(officesCoordinatesQuery);
+    console.log('OfficesCoordinates Data from MySQL:', allData.offices_coordinates);
 
     res.json(allData);
   } catch (error) {
