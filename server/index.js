@@ -10,10 +10,10 @@ app.use(cors({
 }));
 
 const connection = mysql.createConnection({
-  host: 'b6qbdwley7soevanfbv3-mysql.services.clever-cloud.com',
-  user: 'um2laytkoqwm05o0',
-  password: 'g96VtN3BCCEprgyIn4P8',
-  database: 'b6qbdwley7soevanfbv3'
+  host: 'buwykpk0kg9it15ioa5j-mysql.services.clever-cloud.com',
+  user: 'up2ry1fxt02v2bvk',
+  password: 'pC6yOXwKINn1z0inU1tx',
+  database: 'buwykpk0kg9it15ioa5j'
 });
 
 // host: 'gator4214.hostgator.com',
