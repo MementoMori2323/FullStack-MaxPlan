@@ -46,6 +46,7 @@ app.get('/getAllData', async (req, res) => {
     const workstationsQuery = 'SELECT * FROM workstations ORDER BY assigned';
     const computersQuery = 'SELECT * FROM computers';
     const monitorsQuery = 'SELECT * FROM monitors';
+    const departmentsQuery = 'SELECT * FROM departments';
 
     const allData = {};
 
@@ -57,6 +58,9 @@ app.get('/getAllData', async (req, res) => {
 
     allData.monitors = await executeQuery(monitorsQuery);
     console.log('Monitors Data from MySQL:', allData.monitors);
+
+    allData.departments = await executeQuery(departmentsQuery);
+    console.log('Departments Data from MySQL:', allData.departments);
 
     res.json(allData);
   } catch (error) {
