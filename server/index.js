@@ -33,10 +33,10 @@ app.use(session({
 
 // Database connection and query execution
 const connection = mysql.createPool({
-  host: 'bhvdu4rxfktmvhdswm1c-mysql.services.clever-cloud.com',
-  user: 'u6wol2otqb50uy0i',
-  password: 'ROZc7jsxTU8x7j3qHTM6',
-  database: 'bhvdu4rxfktmvhdswm1c'
+  host: 'bayuj02mavcoyowrvlez-mysql.services.clever-cloud.com',
+  user: 'uosxuuxqaxsiuoqu',
+  password: 'JLyvcnL1EKDJtDweF3dj',
+  database: 'bayuj02mavcoyowrvlez'
 });
 
 const executeQuery = (query, values) => {
